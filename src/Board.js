@@ -1,19 +1,22 @@
 import React from "react"
-import ReactDOM from 'react-dom';
 import './index.css';
 import Square from "./Square.js"
 
 class Board extends React.Component {
-		renderSquare(i) {
-    return <Square  value={this.props.squares[i]}
-					onClick={()=> this.props.onClick(i)}
-					raw={1}
-					col={1}
-					textColor={this.props.squares[i] === 'X'? {color:'red'}:{color:'blue'} }
-			/>;
-    }
+renderSquare(i) {
+	const className = this.props.squares[i] === 'X' ? "color-red" : "color-blue";	
+    console.log({className});
+	return <Square
+		className= {className}
+		value={this.props.squares[i]}
+		onClick={()=> this.props.onClick(i)}
+		raw={1}
+		col={1}
+	/>;
 
-  render() {
+}
+
+render() {
     return (
 		<div>
 			<div className="board-row">
