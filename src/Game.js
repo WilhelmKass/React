@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css';
+import './index.scss';
 import calculateWinner from "./calculateWinner.js";
 import Board from "./Board.js"
 
