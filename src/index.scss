@@ -1,35 +1,3 @@
-.color-red {
-	background: #fff;
-  border: 1px solid #999;
-  float: left;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 34px;
-  height: 34px;
-  margin-right: -1px;
-  margin-top: -1px;
-  padding: 0;
-  text-align: center;
-  width: 34px;
-	color: red;
-}
-
-.color-blue {
-	background: #fff;
-  border: 1px solid #999;
-  float: left;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 34px;
-  height: 34px;
-  margin-right: -1px;
-  margin-top: -1px;
-  padding: 0;
-  text-align: center;
-  width: 34px;
-	color: blue;
-}
-
 body {
   font: 14px "Century Gothic", Futura, sans-serif;
   margin: 20px;
@@ -49,20 +17,30 @@ ol, ul {
   margin-bottom: 10px;
 }
 
-.square {
-  background: #fff;
-  border: 1px solid #999;
-  float: left;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 34px;
-  height: 34px;
-  margin-right: -1px;
-  margin-top: -1px;
-  padding: 0;
-  text-align: center;
-  width: 34px;
-}
+#square {
+   background: #fff;
+   border: 1px solid #999;
+   float: left;
+   font: {
+      size: 24px;
+      weight: bold;
+   }
+   line-height: 34px;
+   height: 34px;
+   margin: {
+      right: -1px;
+      top: -1px;
+   }
+   padding: 0;
+   text-align: center;
+   width: 34px;
+   .color-blue{
+      color: red;  
+   }  
+   .color-blue{
+      color: blue;
+   }
+  }
 
 .square:focus {
   outline: none;
