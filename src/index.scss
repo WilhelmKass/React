@@ -17,30 +17,33 @@ ol, ul {
   margin-bottom: 10px;
 }
 
-#square {
-   background: #fff;
-   border: 1px solid #999;
-   float: left;
-   font: {
-      size: 24px;
-      weight: bold;
-   }
-   line-height: 34px;
-   height: 34px;
-   margin: {
-      right: -1px;
-      top: -1px;
-   }
-   padding: 0;
-   text-align: center;
-   width: 34px;
-   .color-blue{
+@mixin Square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font: {
+     size: 24px;
+     weight: bold;
+  }
+  line-height: 34px;
+  height: 34px;
+  margin: {
+     right: -1px;
+     top: -1px;
+  }
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.color-red {
+      @include Square;
       color: red;  
    }  
-   .color-blue{
+.color-blue {
+      @include Square;
       color: blue;
    }
-  }
 
 .square:focus {
   outline: none;
