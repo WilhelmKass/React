@@ -62,22 +62,22 @@ class Game extends React.Component {
 	}else if(history.length -1 ===9 ){
 		status = 'Ничья'
 		} else {status ='Next player ' + (this.state.xIsNext ? 'X' : 'O');
-			}
-    return (
+		   }
+   return (
 	<div className="game">
-        <div className="game-board">
+         <div className="game-board">
 			<Board 
-		    squares={current.squares}
-		    onClick={(i) => this.handleClick(i)}
-		    />
-        </div>
-        <div className="game-info">
-			<div>{status}</div>
+		      squares={current.squares}
+		      onClick={(i) => this.handleClick(i)}
+		   />
+         </div>
+         <div className="game-info">
+			   <div>{status}</div>
             <ol>{moves}</ol>
-        </div>
-    </div>
-    );
-    }
+         </div>
+   </div>
+   );
+   }
 }
  
 export default Game

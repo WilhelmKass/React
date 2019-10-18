@@ -4,8 +4,8 @@ import Square from "./Square.js"
 
 class Board extends React.Component {
 renderSquare(i) {
-	const className = this.props.squares[i] === 'X' ? "color-red" : "color-blue";	
-    console.log({className});
+   const className = this.props.squares[i] === 'X' ? "color-red" : "color-blue";	
+   console.log({className});
 	return <Square
 		className= {className}
 		value={this.props.squares[i]}
@@ -17,7 +17,7 @@ renderSquare(i) {
 }
 
 render() {
-    return (
+   return (
 		<div>
 			<div className="board-row">
 				{this.renderSquare(0)}
